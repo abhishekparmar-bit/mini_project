@@ -12,7 +12,7 @@ export const registerUser = createAsyncThunk(
 
   async (formData) => {
     const response = await axios.post(
-      "https://render.com/docs/node-version/api/auth/register",
+      "https://mini-project-2-2zep.onrender.com/api/auth/register",
       formData,
       {
         withCredentials: true,
@@ -28,7 +28,7 @@ export const loginUser = createAsyncThunk(
 
   async (formData) => {
     const response = await axios.post(
-      "https://render.com/docs/node-version/api/auth/login",
+      "https://mini-project-2-2zep.onrender.com/api/auth/login",
       formData,
       {
         withCredentials: true,
@@ -44,7 +44,7 @@ export const logoutUser = createAsyncThunk(
 
   async () => {
     const response = await axios.post(
-      "https://render.com/docs/node-version/api/auth/logout",
+      "https://mini-project-2-2zep.onrender.com/api/auth/logout",
       {},
       {
         withCredentials: true,
@@ -60,7 +60,7 @@ export const checkAuth = createAsyncThunk(
 
   async () => {
     const response = await axios.get(
-      "https://render.com/docs/node-version/api/auth/check-auth",
+      "https://mini-project-2-2zep.onrender.com/api/auth/check-auth",
       {
         withCredentials: true,
         headers: {
