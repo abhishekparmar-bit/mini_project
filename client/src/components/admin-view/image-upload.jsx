@@ -50,7 +50,7 @@ function ProductImageUpload({
     const data = new FormData();
     data.append("my_file", imageFile);
     const response = await axios.post(
-      "https://mini-project-2-2zep.onrender.com/api/admin/products/upload-image",
+      "https://mini-project-3-58lt.onrender.com/api/admin/products/upload-image",
       data
     );
     console.log(response, "response");
